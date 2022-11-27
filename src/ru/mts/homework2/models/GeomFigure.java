@@ -1,6 +1,6 @@
-package ru.mts.homework2;
+package ru.mts.homework2.models;
 
-public abstract class GeomFigure {
+public abstract class GeomFigure implements Movable {
     private String color;
 
     protected GeomFigure(String color) {
@@ -20,4 +20,6 @@ public abstract class GeomFigure {
     public abstract double getArea();
 
     public abstract String getInfo();
+
+    public abstract void move(double dx, double dy);
 }

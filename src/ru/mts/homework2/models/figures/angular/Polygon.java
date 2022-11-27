@@ -1,7 +1,7 @@
 package ru.mts.homework2.models.figures.angular;
 
-import ru.mts.homework2.GeomFigure;
-import ru.mts.homework2.models.point.Point;
+import ru.mts.homework2.models.GeomFigure;
+import ru.mts.homework2.models.Point;
 import ru.mts.homework2.models.figures.angular.behaviors.WithAngles;
 
 import java.util.List;
@@ -86,4 +86,10 @@ public class Polygon extends GeomFigure implements WithAngles {
         return stringPoints.toString();
     }
 
+    @Override
+    public void move(double dx, double dy) {
+        for (Point point : pointList) {
+            point.move(dx, dy);
+        }
+    }
 }

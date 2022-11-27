@@ -1,8 +1,8 @@
 package ru.mts.homework2.tests;
 
-import ru.mts.homework2.GeomFigure;
+import ru.mts.homework2.models.GeomFigure;
 import ru.mts.homework2.models.figures.angular.Polygon;
-import ru.mts.homework2.models.point.Point;
+import ru.mts.homework2.models.Point;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +23,11 @@ public class TestPolygon {
         System.out.println(polygon.getColor());
         System.out.println(polygon.getPerimeter());
         System.out.println(polygon.getArea());
+        System.out.println(polygon.getInfo());
+
+        System.out.println("==========");
+
+        polygon.move(100, 100);
         System.out.println(polygon.getInfo());
 
     }

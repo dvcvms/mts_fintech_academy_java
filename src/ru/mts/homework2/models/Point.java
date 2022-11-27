@@ -1,4 +1,4 @@
-package ru.mts.homework2.models.point;
+package ru.mts.homework2.models;
 
 public class Point implements Movable {
     private double x;
@@ -16,7 +16,6 @@ public class Point implements Movable {
     public double getY() {
         return y;
     }
-
 
     @Override
     public void move(double dx, double dy) {

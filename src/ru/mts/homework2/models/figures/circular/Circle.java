@@ -1,7 +1,7 @@
 package ru.mts.homework2.models.figures.circular;
 
-import ru.mts.homework2.GeomFigure;
-import ru.mts.homework2.models.point.Point;
+import ru.mts.homework2.models.GeomFigure;
+import ru.mts.homework2.models.Point;
 
 public class Circle extends GeomFigure {
 
@@ -39,5 +39,10 @@ public class Circle extends GeomFigure {
                 ", " + this.center.getY() + ")\n" +
                 "Radius: " + this.radius + "\n" +
                 "Colour: " + getColor();
+    }
+
+    @Override
+    public void move(double dx, double dy) {
+        this.center.move(dx, dy);
     }
 }

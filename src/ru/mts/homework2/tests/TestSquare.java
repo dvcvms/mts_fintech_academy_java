@@ -1,9 +1,8 @@
 package ru.mts.homework2.tests;
 
-import ru.mts.homework2.GeomFigure;
-import ru.mts.homework2.models.figures.angular.Rhombus;
+import ru.mts.homework2.models.GeomFigure;
 import ru.mts.homework2.models.figures.angular.Square;
-import ru.mts.homework2.models.point.Point;
+import ru.mts.homework2.models.Point;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +20,11 @@ public class TestSquare {
         System.out.println(square.getColor());
         System.out.println(square.getPerimeter());
         System.out.println(square.getArea());
+        System.out.println(square.getInfo());
+
+        System.out.println("==========");
+
+        square.move(100, 100);
         System.out.println(square.getInfo());
     }
 }

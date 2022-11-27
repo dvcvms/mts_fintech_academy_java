@@ -1,6 +1,6 @@
 package ru.mts.homework2.tests;
 
-import ru.mts.homework2.GeomFigure;
+import ru.mts.homework2.models.GeomFigure;
 import ru.mts.homework2.models.figures.circular.Circle;
 
 public class TestCircle {
@@ -16,6 +16,11 @@ public class TestCircle {
 
         circle.setColor("RED");
         System.out.println(circle.getColor());
+        System.out.println(circle.getInfo());
+
+        System.out.println("==========");
+
+        circle.move(100, 100);
         System.out.println(circle.getInfo());
     }
 }

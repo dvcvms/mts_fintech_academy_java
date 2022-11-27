@@ -1,6 +1,6 @@
 package ru.mts.homework2.models.figures.angular;
 
-import ru.mts.homework2.models.point.Point;
+import ru.mts.homework2.models.Point;
 
 import java.util.List;
 

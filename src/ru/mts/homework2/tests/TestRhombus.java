@@ -1,9 +1,8 @@
 package ru.mts.homework2.tests;
 
-import ru.mts.homework2.GeomFigure;
-import ru.mts.homework2.models.figures.angular.Polygon;
+import ru.mts.homework2.models.GeomFigure;
 import ru.mts.homework2.models.figures.angular.Rhombus;
-import ru.mts.homework2.models.point.Point;
+import ru.mts.homework2.models.Point;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +22,11 @@ public class TestRhombus {
         System.out.println(rhombus.getColor());
         System.out.println(rhombus.getPerimeter());
         System.out.println(rhombus.getArea());
+        System.out.println(rhombus.getInfo());
+
+        System.out.println("==========");
+
+        rhombus.move(100, 100);
         System.out.println(rhombus.getInfo());
     }
 }

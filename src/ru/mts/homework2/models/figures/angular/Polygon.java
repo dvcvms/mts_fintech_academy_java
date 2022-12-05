@@ -8,8 +8,8 @@ import java.util.List;
 
 public class Polygon extends GeomFigure implements WithAngles {
 
-    private List<Point> pointList;
-    private int numberPoints;
+    private final List<Point> pointList;
+    private final int numberPoints;
 
 
     public Polygon(List<Point> pointList, String color) {
@@ -20,7 +20,10 @@ public class Polygon extends GeomFigure implements WithAngles {
 
     @Override
     public double getPerimeter() {
-        double x0, y0, x1, y1;
+        double x0;
+        double y0;
+        double x1;
+        double y1;
         double perimeter = 0;
 
         x0 = pointList.get(0).getX();
@@ -59,9 +62,7 @@ public class Polygon extends GeomFigure implements WithAngles {
         s1 = s1 + pointList.get(numberPoints - 1).getX() * pointList.get(0).getY();
         s2 = s2 + pointList.get(0).getX() * pointList.get(numberPoints - 1).getY();
 
-        double area = Math.abs(s1 - s2) / 2;
-
-        return area;
+        return Math.abs(s1 - s2) / 2;
     }
 
     @Override
@@ -80,7 +81,11 @@ public class Polygon extends GeomFigure implements WithAngles {
         StringBuilder stringPoints = new StringBuilder();
 
         for (Point point : pointList) {
-            stringPoints.append("(" + point.getX() + ", " + point.getY() + ") ");
+            stringPoints.append("(")
+                    .append(point.getX())
+                    .append(", ")
+                    .append(point.getY())
+                    .append(") ");
         }
 
         return stringPoints.toString();

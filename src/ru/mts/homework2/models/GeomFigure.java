@@ -20,6 +20,4 @@ public abstract class GeomFigure implements Movable {
     public abstract double getArea();
 
     public abstract String getInfo();
-
-    public abstract void move(double dx, double dy);
 }

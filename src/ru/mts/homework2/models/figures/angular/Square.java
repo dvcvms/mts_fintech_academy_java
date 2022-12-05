@@ -12,16 +12,6 @@ public class Square extends Rhombus {
     }
 
     @Override
-    public double getLargerDiagonal() {
-        return super.getLargerDiagonal();
-    }
-
-    @Override
-    public double getSmallerDiagonal() {
-        return super.getSmallerDiagonal();
-    }
-
-    @Override
     public String getInfo() {
         return "This is Square. Characteristics:" +
                 "\nCoordinates: " + getPoints() +
